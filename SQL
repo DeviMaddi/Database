@@ -1,0 +1,28 @@
+SQL - structured query language 
+    - used to manage and manipulate databases
+    - can be used to retrieve, update, insert or delete data
+    - widely used becoz of its simplicity and efficiency.
+
+Database - it is a collection of organized data that can be easily accessed,
+           managed, updated.
+
+Types of Databases:
+1. Relational Db
+2. Non Relational Db
+
+Relational Db :  Organizes data in the form of tables
+                 - uses Sql structured query language to manage data.
+                 ex: mysql, oracle
+                 Apps: Banking and finance, complex transactions.
+
+Non Relational Db : stores data in flexible format like key value pair, document, graph
+                    - designed for high scalability and performance 
+                     - mongoDb, Cassandra.
+                    - Apps: social media platforms, big data
+
+
+SQL COMMANDS
+1. DATA DEFINITION LANGUAGE 
+2. DATA MANIPULATION LANGUAGE 
+3. DATA CONTROL LANGUAGE 
+4. TRANSACTION CONTROL LANGUAGE 
