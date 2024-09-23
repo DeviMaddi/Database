@@ -2,7 +2,7 @@ SQL - structured query language
     - used to manage and manipulate databases
     - can be used to retrieve, update, insert or delete data
     - widely used becoz of its simplicity and efficiency.
-
+-----------------------------------------------------------------------------------------
 Database - it is a collection of organized data that can be easily accessed,
            managed, updated.
 
@@ -20,9 +20,61 @@ Non Relational Db : stores data in flexible format like key value pair, document
                      - mongoDb, Cassandra.
                     - Apps: social media platforms, big data
 
-
+-----------------------------------------------------------------------------------
 SQL COMMANDS
 1. DATA DEFINITION LANGUAGE 
 2. DATA MANIPULATION LANGUAGE 
 3. DATA CONTROL LANGUAGE 
 4. TRANSACTION CONTROL LANGUAGE 
+
+
+Data Definition Language: CREATE, ALTER, TRUNCATE, DROP
+                         - used to change the structure of table like creating a table, altering a table, deleting a table
+CREATE TABLE user(
+   id INT,
+   name VARCHAR(25)
+)
+
+ALTER TABLE user ADD address VARCHAR(25);
+
+DROP - deletes the entire the table including data, rows and columns
+        DROP TABLE user;
+
+TRUNCATE - deletes all the  data from table.
+          TRUNCATE TABLE user;
+--------------------------------------------------------------------------
+Data Manipulation Language:  INSERT, UPDATE, DELETE, 
+                          - used to manage, update, retrieve data fromm table
+INSERT INTO user 
+VALUES(1, "devi","US")
+
+UPDATE user SET address = "NYC" where name = "devi"
+
+DELETE FROM user where address = "NYC"
+
+----------------------------------------------------------------------------
+Data Control Language - GRANT, REVOKE
+                      - controls access to database objects.
+
+GRANT SELECT, UPDATE on user(table) to devi;
+REVOKE DELETE ON user(table) from devi;
+-----------------------------------------------------------------------------
+Transaction Control Language - COMMIT, ROLLBACK
+                            -   this command manage transactions
+COMMIT - save changes made in a trnasaction
+ROLLBACK - undo changes,  restores db to previous state.
+----------------------------------------------------------------------------
+DATATYPES IN SQL 
+- INT
+- FLOAT
+-DECIMAL
+- BOOLEAN
+- CHAR(n) - for fixed length
+- VARCHAR(n) - for variable length
+---------------------------------------------------------------------------
+
+
+
+
+
+
